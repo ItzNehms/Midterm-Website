@@ -1,0 +1,324 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+
+.navbar {
+    width: 100%;
+    height: 105px;
+
+    background: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 260px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* THREE LINE MENU */
+
+.menu {
+    position: absolute;
+
+    left: 35px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 38px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.menu span {
+    display: block;
+
+    width: 100%;
+    height: 3px;
+
+    background: white;
+
+    transition: all 0.3s ease;
+}
+
+
+/* MENU HOVER */
+
+.menu:hover span:nth-child(1) {
+    transform: translateX(6px);
+}
+
+
+.menu:hover span:nth-child(2) {
+    transform: translateX(3px);
+}
+
+
+.menu:hover span:nth-child(3) {
+    transform: translateX(0);
+}
+
+
+/* CONTACT */
+
+.contact {
+    position: absolute;
+
+    right: 35px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.contact-btn {
+    color: white;
+
+    text-decoration: none;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    padding: 10px 15px;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* CONTACT HOVER */
+
+.contact-btn:hover {
+    background: white;
+
+    color: black;
+
+    border-color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
+}
+
+
+/* HERO */
+
+.hero {
+    width: 100%;
+
+    height: calc(100vh - 105px);
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* EFREN IMAGE */
+
+.hero-bg {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    z-index: 1;
+
+    transition: transform 8s ease;
+}
+
+
+/* IMAGE HOVER */
+
+.hero:hover .hero-bg {
+    transform: scale(1.03);
+}
+
+
+/* DARK OVERLAY */
+
+.overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    z-index: 2;
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+    position: relative;
+
+    z-index: 3;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* MAIN QUOTE */
+
+.hero-content h1 {
+    font-size: 75px;
+
+    line-height: 1.05;
+
+    letter-spacing: 5px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    text-shadow: 0 3px 20px rgba(0, 0, 0, 0.8);
+}
+
+
+.hero-content h1 span {
+    font-weight: 300;
+}
+
+
+/* SMALL QUOTE */
+
+.hero-content p {
+    margin-top: 18px;
+
+    font-size: 20px;
+
+    letter-spacing: 6px;
+
+    text-transform: uppercase;
+
+    color: #ddd;
+
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+.shop-btn {
+    margin-top: 35px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 15px 28px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    border: 1px solid white;
+
+    transition: all 0.3s ease;
+}
+
+
+/* SHOP NOW ARROW */
+
+.shop-btn::after {
+    content: "→";
+
+    font-size: 18px;
+
+    transition: transform 0.3s ease;
+}
+
+
+
+
+.shop-btn:hover {
+    background: transparent;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+.shop-btn:hover::after {
+    transform: translateX(5px);
+}
+```
