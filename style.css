@@ -1,4 +1,4 @@
-```css
+
 * {
     margin: 0;
     padding: 0;
@@ -321,4 +321,4 @@ body {
 .shop-btn:hover::after {
     transform: translateX(5px);
 }
-```
+
